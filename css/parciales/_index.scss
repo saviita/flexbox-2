@@ -1,0 +1,107 @@
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 125px;
+    margin-bottom: 71px;
+}
+
+.description {
+    width: 445px;
+
+    &__title {
+        @include font_title;
+        margin: 0;
+    }
+
+    &__text {
+        @include font_description;
+        margin-top: 16px;
+    }
+}
+
+.ratings {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.rate {
+    display: flex;
+    background-color: $color_secondary_light;
+    width: 445px;
+    height: 56px;
+    border-radius: 8px;
+    align-items: center;
+
+    &__stars {
+        width: 116px;
+        margin-left: 32px
+    }
+
+    &__text {
+        @include font_rate;
+        margin: 32.45px;
+    }
+
+    &:nth-child(2) {
+        margin-left: 48px;
+    }
+
+    &:nth-child(3) {
+        margin-left: 95px;
+    }
+}
+
+.reviews {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.review {
+    background-color: $color_primary;
+    width: 350px;
+    height: 234px;
+    border-radius: 8px;
+    padding-top: 40px;
+    padding-bottom: 35px;
+    padding-inline: 32px;
+
+    &__user {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    &__photo {
+        width: 40px;
+        height: 40px;
+        margin-right: 23px;
+    }
+
+    &__name {
+        @include font_name;
+        margin: 0;
+        margin-bottom: 4px;
+    }
+
+    &__verification {
+        @include font_verification;
+        margin: 0;
+    }
+
+    &__text {
+        @include font_review;
+        margin-top: 32px;
+        margin-bottom: 0;
+    }
+
+    &:nth-child(2) {
+        margin-top: 16px;
+    }
+
+    &:nth-child(3) {
+        margin-top: 32px;
+    }
+}

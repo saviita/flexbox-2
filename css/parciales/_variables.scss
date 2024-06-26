@@ -1,0 +1,46 @@
+$color_primary: #512051;
+$color_primary_light: #927B91;
+$color_secondary: #EE69A4;
+$color_secondary_light: #F9E8F8;
+$color_neutral: #FFFFFF;
+
+$font: "League Spartan", sans-serif;
+
+@mixin font_title {
+    color: $color_primary;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@mixin font_description {
+    color: $color_primary_light;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+@mixin font_rate {
+    color: $color_primary;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@mixin font_name {
+    color: $color_neutral;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@mixin font_verification {
+    color: $color_secondary;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@mixin font_review {
+    color: $color_neutral;
+}
